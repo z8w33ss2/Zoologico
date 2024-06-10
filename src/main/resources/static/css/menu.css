@@ -1,0 +1,97 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 9 jun 2024, 13:10:54
+    Author     : Carlos Esteban Solís Alvarado
+*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+}
+
+.header{
+    background-color: #03A63C;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10 40px;
+    line-height: 80px;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 30px;
+    list-style: none;
+
+}
+
+.nav-menu-item{
+    font-size: 15px;
+    margin: 0 5px;
+    line-height: 80px; /*Centra el texto*/
+    width: max-content; /*Evita que las palabras se corten*/
+}
+
+.nav-menu-link:hover{
+    background-color: #024070;
+    transition: 0.5s;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+.table-header{
+    background-color: lightskyblue;
+    color: black;
+}
+
+/*nth-child(odd) filas impares*/
+.table tr:nth-child(odd) {
+    background-color: coral;
+    color: blue;
+}
+
+/*nth-child(odd) filas pares*/
+.table tr:nth-child(even) {
+    background-color: white;
+    color: blue;
+}
+
+.footer{
+    position:fixed;
+    bottom: 0%;
+    left: 0%;
+    height: 2%;
+    width: 100%;
+    background-color: #03A63C;
+    text-align: center;
+}
